@@ -4,9 +4,12 @@
 #if [ "$(ls /tmp/sti/artifacts/ 2>/dev/null)" ]; then
 #    mv /tmp/sti/artifacts/* $HOME/.
 #fi
+echo "running assemble.sh"
 
 # move the application source
 cp /tmp/src/openshift-activemq.xml /opt/amq/conf
+
+ls -lrt /opt/amq/conf
 
 # build application artifacts
 #pushd ${HOME}
