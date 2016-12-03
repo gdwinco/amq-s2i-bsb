@@ -170,6 +170,7 @@
             <transportConnector name="openwire" uri="tcp://0.0.0.0:61616?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600?jms.prefetchPolicy.all=5" />                                                            
             <transportConnector name="ssl" uri="ssl://0.0.0.0:61617?maximumConnections=1000&amp;wireFormat.maxFrameSize=104857600?jms.prefetchPolicy.all=5" />                                                                 
         </transportConnectors>                                                                                                                                                                        
+<!--
                                                                                                                                                                                                       
         <sslContext>                                                                                                                                                                                  
             <sslContext keyStore="file:/etc/amq-secret-volume/amq-server.ks"                                                                                                                          
@@ -177,6 +178,7 @@
                         trustStore="file:/etc/amq-secret-volume/amq-server.ts"                                                                                                                        
                         trustStorePassword="password" />                                                                                                                                              
         </sslContext>                                                                                                                                                                                 
+-->
                                                                                                                                                                                                       
         <!-- destroy the spring context on shutdown to stop jetty -->                                                                                                                                 
         <shutdownHooks>                                                                                                                                                                               
