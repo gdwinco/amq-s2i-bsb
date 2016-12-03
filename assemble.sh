@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # restore build artifacts
-#if [ "$(ls /tmp/sti/artifacts/ 2>/dev/null)" ]; then
-#    mv /tmp/sti/artifacts/* $HOME/.
-#fi
+if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
+    mv /tmp/artifacts/* $HOME/.
+fi
 echo "running assemble.sh"
 
 # move the application source
